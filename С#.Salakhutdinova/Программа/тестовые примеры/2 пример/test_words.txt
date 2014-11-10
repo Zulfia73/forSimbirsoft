@@ -1,0 +1,11 @@
+﻿Hellow Alex your error is fatal .
+An iterator pointing to the new location of the element that followed the last element erased by the function call .
+This is the container end if the operation erased the last element in the sequence . 
+The container is modified . 
+None of the elements before position (or first) is accessed , 
+and concurrently
+accessing or modifying them is safe .
+If the removed elements include the last element in the container , no exceptions are thrown ( no - throw guarantee ) .
+ Otherwise , the container is guaranteed to end in a valid state ( basic guarantee ) .
+ An invalid position or range causes undefined behavior .
+Linear on the number of elements erased ( destructions ) plus the number of elements after the last element deleted ( moving ) .
